@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRVs</title>
+</head>
+<body>
+    <h1>Preenchimento das tabelas de DVR's</h1>
+    <form action="tabela.html" method="post" autocomplete="off">
+        <p>
+            <label for="ifilial">Filial:</label>
+            <input type="text" name="filial" id="ifilial" required maxlength="3" size="15" placeholder="N° da filial">
+        </p>
+        <p>
+            <label for="idvr">DVR Modelo:</label>
+            <input type="text" name="modelo" id="idvr" required maxlength="10" size="15" placeholder="MHDX ****">
+        </p>
+        <p>
+            <label for="icofre">CAM Cofre:</label>
+            <input type="text" name="cofre" id="icofre" required maxlength="2" size="5" placeholder="n°">
+        </p>
+        <p>
+            <label for="idermo">CAM Dermo:</label>
+            <input type="text" name="dermo" id="idermo" required size="5" placeholder="n°">
+        </p>
+        <p>
+            <label for="iexterna">CAM Externas:</label>
+            <input type="text" name="externa" id="iexterna" required size="10" placeholder="n°">
+        </p>
+        <p>
+            <label for="irack">CAM Rack:</label>
+            <input type="text" name="rack" id="irack" required size="5" placeholder="n°">
+        </p>
+        <p>
+            <label for="iproblemas">Probelmas:</label>
+            <input type="text" name="problemas" id="iproblemas" required size="50" placeholder="Descreva os problemas encontrados nas cameras">
+        </p>
+        <p>
+            <label for="ipicture"></label>
+            <input type="text" name="imagem" id="ipcture" required size="20" placeholder="Anexar QR Code">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
